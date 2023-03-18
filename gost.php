@@ -7,7 +7,7 @@ $db_name = "shop";
 
 $conecction = mysqli_connect($host, $user, $password, $db_name);
 
-$query = "SELECT * FROM `product`";
+$query = "SELECT * FROM `product_gost`";
 
 $req = mysqli_query($conecction, $query);
 
@@ -40,7 +40,7 @@ while($resulst = mysqli_fetch_assoc($req)){
             <li>
                 <a href="/register.php" class="header__list-link reg"> Регистрация </a>
             </li>
-        <li>
+            <li>
                 <a class="header__list-gost">Гость</a>
             </li>
         </ul>

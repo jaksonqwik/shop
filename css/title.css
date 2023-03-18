@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 
-.titles{
-    text-align: center;
+.titel_shop{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
 }
 
 .line{
@@ -12,35 +14,6 @@
 	border-bottom: 1px solid #1f1209;
 	box-shadow: 0 20px 20px -20px #333;
 	width: 95%;
-}
-
-.header__title-shop{
-    text-align: left;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-}
-
-.full_name{
-    margin-top: -50px;
-    margin-left: -40px;
-}
-
-.email{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.pass{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.sub{
-    display:flex;
-    justify-content:center;
-    align-items: center;
 }
 
 #centre{
@@ -63,66 +36,54 @@
 
 .photo{
     width: 150px;
-    
 }
 
-.name_prod{
-    font-family: 'Quicksand', sans-serif;
+.user{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
 
-.buy{
-    text-decoration: none;
-
+.user:not(:last-child){
+    margin-right: 10px;
 }
 
-.save{
-    text-decoration: none;
-}
-
-.name_dis{
-    font-family: 'Quicksand', sans-serif;
-}
-
-.name_price{
-    font-family: 'Quicksand', sans-serif;
-}
-
-.header__content{
+.head_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     transform: translate(0,-10px);
 }
 
-.header__content a{
+.head_content a{
     display:inline-block;
-    padding: 10px;
+    padding:10px;
 }
 
-.header__lists{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-}
-.header__list:not(:last-child){
+.link{
     margin-right:10px;
+    font-size: 15px;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
 }
 
-
-.header__list-link{
+.log_out{
     text-decoration: none;
     font-size: 15px;
     color:black;
     font-family: 'Quicksand', sans-serif;
 }
 
-.header__list-gost{
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    font-family: 'Quicksand', sans-serif;
+.log_out:hover{
+    color: orangered;
 }
 
-.header__list-link:hover{
-    color: orangered;
+.product{
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    justify-content: space-between;
+    background: white;
+    margin-top: 100px;
+    font-family: 'Quicksand', sans-serif;
 }

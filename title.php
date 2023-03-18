@@ -27,40 +27,47 @@ while($resulst = mysqli_fetch_assoc($req)){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/title.css">
     <title>Shop</title>
 </head>
 <body>
-    <form>
+    <div class="head_content">
         <h1 class="titel_shop">Sport Shop</h1>
-        <p align="right" class="full_name"><?= $_SESSION['user']['fullName']?></p>
-        <p align="right" calass="email_title"><?= $_SESSION['user']['email']?></p>
-        <div class="exit">
-            <a href="avant/logout.php" class ="log_out">Выход</a>
+        <ul class="user">
+            <li>
+                <p class="link name"><?= $_SESSION['user']['fullName']?></p>
+            </li>
+            <li>
+                <p class="link email"><?= $_SESSION['user']['email']?></p>
+            </li>
+            <li>
+                <a href="avant/logout.php" class ="log_out">Выход</a>
+            </li>
+        </ul>
+    </div>
+    <hr class="line">
+
+    <div id="centre">
+
+        <?php foreach($data_db as $product): ?>
+
+        <div class="product">
+            <img class="photo" src="/img/<?php echo $product['pthoto'];?>.png" alt="">
+            <h2>
+                <?php echo $product['title']?>
+            </h2>
+            <p>
+                <?php echo $product['discription']?>
+            </p>
+            <p>
+                <strong>
+                    <?php echo $product['price']?> грн.
+                </strong>
+            </p>
+            <a href="/oreder.php">Заказать</a>
+            <a href="">В корзину</a>
         </div>
-
-        <div id="centre">
-
-            <?php foreach($data_db as $product): ?>
-
-            <div class="product">
-                <img class="photo" src="/img/<?php echo $product['pthoto'];?>.png" alt="">
-                <h2>
-                    <?php echo $product['title']?>
-                </h2>
-                <p>
-                    <?php echo $product['discription']?>
-                </p>
-                <p>
-                    <strong>
-                        <?php echo $product['price']?> грн.
-                    </strong>
-                </p>
-                <a href="/oreder.php">Заказать</a>
-                <a href="">В корзину</a>
-            </div>
-            <?php endforeach;?>
-        </div>  
-    </form>
+        <?php endforeach;?>
+    </div> 
 </body>
 </html>
