@@ -51,18 +51,22 @@
     text-align: right;
 }
 
-#centre{
+#centre {
     width: 900px;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.product{
-    width: 280px;
-    float: left;
+.product {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    justify-content: space-between;
     background: white;
-    margin: 0 10px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .photo{
