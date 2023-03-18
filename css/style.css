@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+
+.titles{
+    text-align: center;
+}
+
+.line{
+    margin: -60px auto 10px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #1f1209;
+	box-shadow: 0 20px 20px -20px #333;
+	width: 95%;
+}
+
+.header__title-shop{
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.full_name{
+    margin-top: -50px;
+    margin-left: -40px;
+}
+
+.email{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.pass{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.sub{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.log_out{
+    text-decoration: none;
+}
+
+.exit{
+    text-align: right;
+}
+
+#centre{
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product{
+    width: 280px;
+    float: left;
+    background: white;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+
+.photo{
+    width: 150px;
+    
+}
+
+.name_prod{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buy{
+    text-decoration: none;
+
+}
+
+.save{
+    text-decoration: none;
+}
+
+.name_dis{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.name_price{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate(0,-10px);
+}
+
+.header__content a{
+    display:inline-block;
+    padding:10px;
+}
+
+.header__lists{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.header__list:not(:last-child){
+    margin-right:10px;
+}
+
+
+.block_func{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: flex-end;
+
+}
+
+.header__list-link{
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header__list-gost{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header__list-link:hover{
+    color: orangered;
+}
