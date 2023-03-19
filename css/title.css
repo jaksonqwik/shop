@@ -84,6 +84,29 @@
     max-width: 280px;
     justify-content: space-between;
     background: white;
-    margin-top: 100px;
+    margin-top: 50px;
     font-family: 'Quicksand', sans-serif;
+}
+
+.order_content a{
+    display:inline-block;
+    padding: 10px;
+    color: #1f1209;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.order_content a:hover {
+    color:aliceblue;
+    background: #1f1209;
+ }
+
+.buy{
+    text-decoration: none;
+
+
+}
+
+.save{
+    text-decoration: none;
 }

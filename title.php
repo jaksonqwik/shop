@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['save.php'])){
+    echo "Корзина: " . count($_SESSION['cart_list']);
+}
+
 $host = "localhost";
 $user = "root";
 $password = "";
@@ -64,8 +69,10 @@ while($resulst = mysqli_fetch_assoc($req)){
                     <?php echo $product['price']?> грн.
                 </strong>
             </p>
-            <a href="/oreder.php">Заказать</a>
-            <a href="">В корзину</a>
+            <div class="order_content">
+                <a href="/oreder.php" class="buy">Заказать</a>
+                <a href="/avant/save.php?prod_id=<?php echo $product['id'];?>" class="save">В корзину</a>
+            </div>
         </div>
         <?php endforeach;?>
     </div> 

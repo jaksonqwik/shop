@@ -64,8 +64,10 @@ while($resulst = mysqli_fetch_assoc($req)){
                     <?php echo $product['price']?> грн.
                 </strong>
             </p>
-            <a href="/oreder.php" class="buy">Заказать</a>
-            <a href="" class="save">В корзину</a>
+            <div class="order_content">
+                <a href="/oreder.php" class="buy">Заказать</a>
+                <a href="" class="save">В корзину</a>
+            </div>
         </div>
         <?php endforeach;?>
     </div> 

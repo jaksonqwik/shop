@@ -25,21 +25,23 @@ $connect->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Авторизация</title>
 </head>
 <body>
-    <h1 class="titles">Авторизация</h1> 
-    <form action="/avant/log_in.php" method="POST">   
+    <h1 class="titles">Авторизация</h1>
+    <form class="form_log" action="/avant/log_in.php" method="POST">  
         <input type="email" class="email" placeholder="Email" name="email">
+        <br>
         <input type="password" class="pass" placeholder="Password" name="pass">
+        <br>
         <input type="submit" value="Войти" name="login" class="sub">
     </form>
-    <br>
     <div class="not_acc">
         Нету аккауна?
+        <br>
+        <a href="register.php" class="l_register">Регистрация</a>
+        <a href="gost.php" class="gost">Гость</a>
     </div>
-    <a href="register.php" class="l_register">Регистрация</a>
-    <a href="gost.php" class="gost">Гость</a>
 </body>
 </html>
