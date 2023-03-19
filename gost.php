@@ -65,8 +65,8 @@ while($resulst = mysqli_fetch_assoc($req)){
                 </strong>
             </p>
             <div class="order_content">
-                <a href="/oreder.php" class="buy">Заказать</a>
-                <a href="" class="save">В корзину</a>
+                <a href="/avant/order_gost.php" class="buy">Заказать</a>
+                <a href="/avant/save_gost.php?prod_id=<?php echo $product['id'];?>" class="save">В корзину</a>
             </div>
         </div>
         <?php endforeach;?>
