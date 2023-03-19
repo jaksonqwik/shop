@@ -54,32 +54,46 @@ if ( isset($_GET['prod_id']) && !empty($_GET['prod_id']) ) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/save.css">
+    <title>Корзина</title>
 </head>
 <body>
-    <a href="/title.php">Главная</a>
-    <h1>Корзина</h1>
-
-    <?php if(isset($_SESSION['save_list']) && count($_SESSION['save_list']) !=0): ?>
-
-        <ul>
-            <?php foreach($_SESSION['save_list'] as $product): ?>
-
-                <li>
-                    <?php echo $product['title']; ?> |
-                    <?php echo $product['price']; ?> грн.|
-                    <a href="save.php?delete_id=<?php echo $product['id'];?>">X</a>
-                </li>
-            <?php endforeach;?>
+    <div class="header__content">
+        <h1 class="title_save">Корзина</h1>
+        <ul class="header__lists">
+            <li>
+                <a href="/title.php" class="header__list-link">Главная</a>
+            </li>
         </ul>
-    <?php else: ?>
-        <p>
-            Пусто
-        </p>
-    <?php endif;?>
+            
+        </div>
+        <hr class="line">
 
-    <a href="/title.php">Продолжить покупки</a>
-    <br>
-    <a href="/oreder.php">Оформить заказ</a>
+        <?php if(isset($_SESSION['save_list']) && count($_SESSION['save_list']) !=0): ?>
+
+            <ul class="product_list">
+                <?php foreach($_SESSION['save_list'] as $product): ?>
+
+                    <li>
+                        <?php echo $product['title']; ?> |
+                        <?php echo $product['price']; ?> грн.|
+                        <a href="save.php?delete_id=<?php echo $product['id'];?>" class="product_list-del">Удалить</a>
+                    </li>
+                <?php endforeach;?>
+            </ul>
+            <ul class="list_buy">
+                <li>
+                    <a href="/title.php" class="header__list-buy">Продолжить покупки</a>
+                </li>
+                <li>
+                    <a href="/oreder.php" class="header__list-buy2">Оформить заказ</a>
+                </li>
+            </ul>
+        <?php else: ?>
+            <p class="product_list">
+                Пусто
+            </p>
+        <?php endif;?>
+    </div>
 </body>
 </html>

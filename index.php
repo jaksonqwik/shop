@@ -29,19 +29,22 @@ $connect->close();
     <title>Авторизация</title>
 </head>
 <body>
-    <h1 class="titles">Авторизация</h1>
-    <form class="form_log" action="/avant/log_in.php" method="POST">  
-        <input type="email" class="email" placeholder="Email" name="email">
-        <br>
-        <input type="password" class="pass" placeholder="Password" name="pass">
-        <br>
-        <input type="submit" value="Войти" name="login" class="sub">
-    </form>
-    <div class="not_acc">
-        Нету аккауна?
-        <br>
-        <a href="register.php" class="l_register">Регистрация</a>
-        <a href="gost.php" class="gost">Гость</a>
+    <div class="form">
+        <h1 class="titles">Авторизация</h1>
+        <form class="form_log" action="/avant/log_in.php" method="POST">  
+            <input type="email" class="form-input" placeholder="Email" name="email">
+            <br>
+            <input type="password" class="form-input" placeholder="Password" name="pass">
+            <br>
+            <input type="submit" value="Войти" name="login" class="sub">
+        </form>
+        <div class="not_acc">
+            Нету аккауна?
+            <br>
+            <a href="register.php" class="l_register">Регистрация</a>
+            <a href="gost.php" class="gost">Гость</a>
+        </div>
     </div>
+    
 </body>
 </html>
